@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS Balance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d60a986884.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>MARS Batches Calculator</h1>
+    </div>
+
+    <form id="Inflow Specifications" onsubmit="download_csv()">
+        <table>
+            <tr class="labelinput">
+                <td><label for="naohwt">NaOH inlet solution Concentration (wt%) </label></td>
+                <td><input type="number" id="naohwt" name="naohwt" placeholder="0-100 (wt%)" required></td>
+            </tr>
+
+            <tr class="labelinput">
+                <td><label for="hclwt">HCl inlet solution Concentration (wt%)</label></td>
+                <td><input type="number" id="hclwt" name="hclwt" placeholder="0-100 (wt%)" required></td>
+            </tr>
+
+            <tr class="labelinput">
+                <td><label for="phenolconc">Phenol inlet concentration (kg/m3)</label></td>
+                <td><input type="number" id="phenolconc" name="phenolconc" placeholder="(kg/m3)" required></td>
+            </tr>
+
+            <tr class="labelinput">
+                <td><label for="phenolvolume">Total wastewater Volume (kg)</label></td>
+                <td><input type="number" id="phenolvolume" name="phenolvolume" placeholder="(kg)" required></td>
+            </tr>
+
+            <tr class="labelinput">
+                <td><label for="extracteff">Desired Extraction Efficiency (%)</label></td>
+                <td><input type="number" id="extracteff" name="extracteff" placeholder="0-100 (%)" required></td>
+            </tr>
+
+        </table>
+
+        <button type="submit" id="submitbutton">
+            <div id="downcontainer">
+                <i class="fas fa-floppy-disk fa-5x center"></i>
+                <p>Download marsBatches.csv</p>
+            </div>
+        </button>
+    </form>
+
+    <script src="marscalculator.js"></script>
+
+</body>
+</html>

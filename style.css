@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Julius+Sans+One&display=swap');
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+#header{
+    margin: 2% auto 0% auto;
+    color: #FBFF12;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+table{
+    color: white;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+td{
+    padding-bottom: 3%;
+}
+
+td:nth-child(2){
+    width: 30vw;
+}
+
+tr:nth-child(1){
+    padding-top: 0;
+}
+
+label{
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-align: left;
+}
+
+input[type="number"]{
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+    border-radius: 18px;
+    outline-style: none;
+    border: 1px solid;
+    height: 2em;
+    width: 100%;
+    background-color: #333333;
+    color: #dfdfdf;
+    padding: 0.025% 0;
+}
+
+input:focus{
+    border: 1px solid #41EAD4;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+    text-align: center;
+    color: #818181;
+    opacity: 1;
+}
+
+#calculate{
+    border-radius: 25px;
+    padding: 0.5% 5%;
+    font-size: 1.5em;
+    display: block;
+    margin: auto;
+    background-color: #FF206E;
+    color: white;
+}
+
+#downcontainer{
+    display: block;
+    margin: 1% auto;
+    width: 20%;
+    text-align: center;
+    color: #FF206E;
+}
+
+#downcontainer:hover{
+    cursor: pointer;
+}
+
+#downcontainer p{
+    text-align: center;
+    color: white;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin-top: 0;
+}
+
+button {
+    background-color: black;
+    width: 100%
+}
